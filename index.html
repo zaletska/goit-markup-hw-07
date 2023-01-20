@@ -42,6 +42,15 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="modal-icon" width="32" height="22">
+            <use href="./img/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -118,7 +127,11 @@
             <li class="item">
               <a href="">
                 <img
-                  src="./img/computer.jpg"
+                  srcset="
+                    ./img/webstudio/03_desktop/what-are-we-doing/desktop-app.jpg    1x,
+                    ./img/webstudio/03_desktop/what-are-we-doing/desktop-app@2x.jpg 2x
+                  "
+                  src="./img/webstudio/03_desktop/what-are-we-doing/desktop-app.jpg"
                   alt="computer"
                   width="360"
                   height="300"
@@ -128,7 +141,11 @@
             <li class="item">
               <a href="">
                 <img
-                  src="./img/screenshot.jpg"
+                  srcset="
+                    ./img/webstudio/03_desktop/what-are-we-doing/mobile-app.jpg    1x,
+                    ./img/webstudio/03_desktop/what-are-we-doing/mobile-app@2x.jpg 2x
+                  "
+                  src="./img/webstudio/03_desktop/what-are-we-doing/mobile-app.jpg"
                   alt="screenshot"
                   width="360"
                   height="300"
@@ -138,7 +155,11 @@
             <li class="item">
               <a href="">
                 <img
-                  src="./img/phone.jpg"
+                  srcset="
+                    ./img/webstudio/03_desktop/what-are-we-doing/ux-ui-design.jpg    1x,
+                    ./img/webstudio/03_desktop/what-are-we-doing/ux-ui-design@2x.jpg 2x
+                  "
+                  src="./img/webstudio/03_desktop/what-are-we-doing/ux-ui-design.jpg"
                   alt="phone"
                   width="360"
                   height="300"
@@ -155,7 +176,11 @@
             <li class="item">
               <a href="">
                 <img
-                  src="./img/mark_guerrero.jpg"
+                  srcset="
+                    ./img/webstudio/team/mark-guerrero.jpg    1x,
+                    ./img/webstudio/team/mark-guerrero@2x.jpg 2x
+                  "
+                  src="./img/webstudio/team/mark-guerrero.jpg"
                   alt="fotomark"
                   width="264"
                   height="260"
@@ -199,7 +224,11 @@
             <li class="item">
               <a href="">
                 <img
-                  src="./img/tom_ford.jpg"
+                  srcset="
+                    ./img/webstudio/team/tom-ford.jpg    1x,
+                    ./img/webstudio/team/tom-ford@2x.jpg 2x
+                  "
+                  src="/img/webstudio/team/tom-ford.jpg"
                   alt="fototom"
                   width="264"
                   height="260"
@@ -243,7 +272,11 @@
             <li class="item">
               <a href="">
                 <img
-                  src="./img/camila_garcia.jpg"
+                  srcset="
+                    ./img/webstudio/team/camila-garcia.jpg  1x,
+                    img/webstudio/team/camila-garcia@2x.jpg 2x
+                  "
+                  src="./img/webstudio/team/camila-garcia.jpg"
                   alt="fotocamila"
                   width="264"
                   height="260"
@@ -287,7 +320,11 @@
             <li class="item">
               <a href="">
                 <img
-                  src="./img/daniel_wilson.jpg"
+                  srcset="
+                    ./img/webstudio/team/daniel-wilson.jpg  1x,
+                    img/webstudio/team/daniel-wilson@2x.jpg 2x
+                  "
+                  src="./img/webstudio/team/daniel-wilson.jpg"
                   alt="fotodaniel"
                   width="264"
                   height="260"
@@ -386,8 +423,8 @@
         <div class="main-footer-info">
           <a class="logo" href="/"><span>WEB</span>STUDIO</a>
           <p class="text">
-            Increase the flow of customers 
-            and <br /> sales for your business with digital <br />
+            Increase the flow of customers and <br />
+            sales for your business with digital <br />
             marketing & growth solutions.
           </p>
         </div>
@@ -515,6 +552,76 @@
       </div>
     </div>
 
+    <!--Mibile Modal-->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts-list list">
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link accent" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social-list list">
+        <li class="social-list-item">
+          <a href="" class="social-list-link">
+            <svg class="social-list-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a href="" class="social-list-link">
+            <svg class="social-list-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a href="" class="social-list-link">
+            <svg class="social-list-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a href="" class="social-list-link">
+            <svg class="social-list-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
